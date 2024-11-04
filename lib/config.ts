@@ -94,7 +94,13 @@ export type Config = {
     bupt: {
         portal_cookie?: string;
     };
+    caixin: {
+        cookie?: string;
+    };
     civitai: {
+        cookie?: string;
+    };
+    dianping: {
         cookie?: string;
     };
     dida365: {
@@ -497,8 +503,14 @@ const calculateValue = () => {
         bupt: {
             portal_cookie: envs.BUPT_PORTAL_COOKIE,
         },
+        caixin: {
+            cookie: envs.CAIXIN_COOKIE,
+        },
         civitai: {
             cookie: envs.CIVITAI_COOKIE,
+        },
+        dianping: {
+            cookie: envs.DIANPING_COOKIE,
         },
         dida365: {
             username: envs.DIDA365_USERNAME,
